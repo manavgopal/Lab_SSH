@@ -1,0 +1,2 @@
+# django-music-project-base
+
