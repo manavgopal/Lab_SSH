@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Songs Page</title>
+</head>
+<body>
+    <h1>
+      <center>
+        <!-- Add playlist name here -->
+    
+      </center>
+    </h1>
+    <table>
+        <tr>
+          <th>No.</th>
+          <th>Track</th>
+          <th>Artist</th>
+          <th>Album</th>
+          <th>Length</th>
+        </tr>
+        <!-- Add a loop for songs here -->
+
+        <tr>
+          <td>
+            <!-- Add a counter on number of songs -->
+            <!-- THIS IS DONE FOR YOU :) -->
+            {{ forloop.counter }}
+          </td>
+          <td>
+            <!-- Add the track  -->
+            
+            <!-- Below tasks are done for you :)  -->
+            <!-- Make sure you use similar variables name for loop iterator (song variable)  -->
+          </td>
+          <td>
+            <!-- Add the artist -->
+            {{ song.Artist }}
+          </td>
+          <td>
+            <!-- Add the album -->
+            {{ song.Album }}
+          </td>
+          <td>
+            <!-- Add the length -->
+            {{ song.Length }}
+          </td>
+        </tr>
+        <!-- End the loop for songs -->
+        {% endfor %}
+      </table>
+    
+</body>
+</html>
