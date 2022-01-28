@@ -20,4 +20,5 @@ urlpatterns = [
     # TODO: Include playlist urls here
     # Hint: use the include method
     path('admin/', admin.site.urls),
+    path('', include('playlist.urls'))
 ]

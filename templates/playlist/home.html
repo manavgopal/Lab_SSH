@@ -12,7 +12,7 @@
       <div class="card">
 
         <!-- Add the relative url here for playlist with id of current playlist -->
-        <!-- HINT: <a href="{% use url tag here ;) %}"> -->
+        <a href="{% for playlist in my_playlists %}">
 
           <div class="imgBx">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3mb4W9ZYrm64cv-S2uAxQJ_Q1NPL4nVlJLw&usqp=CAU" alt="images">
@@ -20,10 +20,12 @@
           <div class="details">
               <h2>
                 <!-- Add the playlist name -->
+                {{playlist.name}}
                 
                 <br>
                 <span>
                 <!-- Add the songs in the playlist  -->
+                {{playlist.numberOfSongs}}
                 
                 </span>
             </h2>
@@ -31,6 +33,7 @@
         </a>
       </div>
     <!-- End the loop for my_playlists -->
+    {% endfor%}
     
   </div>
 </body>
